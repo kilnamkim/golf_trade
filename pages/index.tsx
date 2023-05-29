@@ -24,9 +24,18 @@ export default function Home() {
         <Link href="/products" color="secondary">
           Products
         </Link>
+        <Link href="/album" color="secondary">
+          Album
+        </Link>
+        <Link href="/signup" color="secondary">
+          Signup
+        </Link>    
+        <Link href="/signin" color="secondary">
+          Signin
+        </Link>    
         <Link href="/table" color="secondary">
           Table
-        </Link>   
+        </Link>  
         <Link href="/about" color="secondary">
           About
         </Link>        
