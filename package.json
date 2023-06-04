@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "local": "cross-env NODE_ENV=local nodemon --exec ts-node --project tsconfig.json server/index.ts",
-    "dev": "cross-env NODE_ENV=dev nodemon --exec ts-node --project tsconfig.json server/index.ts",
+    "dev": "cross-env NODE_ENV=dev ts-node server/index.ts",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
