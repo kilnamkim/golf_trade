@@ -1,6 +1,7 @@
 import express, { Request, Response } from 'express'
 import next from 'next';
 import accountRouter from './router/account'
+import usersRouter from './router/users'
 
 const dev = process.env.NODE_ENV !== 'production'
 const app = next({ dev });
@@ -16,6 +17,7 @@ app.prepare().then(() => {
   });
 
   server.use('/api/account', accountRouter)
+  server.use('/api/users', usersRouter)
 
   server.all('*', (req: Request, res: Response) => {
     return handle(req, res);

@@ -42,3 +42,15 @@ More information [in the documentation](https://mui.com/material-ui/guides/routi
 
 You now have a working example project.
 You can head back to the documentation, continuing browsing it from the [templates](https://mui.com/material-ui/getting-started/templates/) section.
+
+
+### Database
+
+```sql
+CREATE DATABASE trade CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;
+
+CREATE USER 'trade'@'%' identified by 'trade123';
+GRANT ALL privileges on *.* to 'trade'@'%';
+FLUSH privileges;
+
+```
