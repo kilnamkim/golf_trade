@@ -12,6 +12,6 @@ const db = {
     users: users(trade_sequelize),
 }
 
-trade_sequelize.sync()
+// trade_sequelize.sync()
 
 export default db
